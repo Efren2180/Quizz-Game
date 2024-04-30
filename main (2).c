@@ -1,16 +1,14 @@
-#include <ctype.h>
-#include <stdio.h>
-
 int main() {
   char questions[][100] = {
-      "1- Who was the person that introduced the C programming language?:",
-      "2- In what year C became a programming language?: ",
-      "3- C Was created to be used in?:"};
+      "1-Who was the person that introduced the C programming language?\n",
+      "2- In what year C became a programming language?: \n",
+  
+      "3- C Was created to be used in?:\n"};
 
   char options[][100] = {"A. Denis Ritchie ",
                          "B. Bill gates",
                          "C. Elon Musk",
-                         "D.Freddie Mercury",
+                         "D. Freddie Mercury",
                          "A. 1969",
                          "B. 1972",
                          "C. 1975",
@@ -34,7 +32,7 @@ int main() {
     for (int j = (i * 4); j < (i * 4) + 4; j++){
 
       printf("%s\n", options[j]);
-      
+
     }
     printf("guess: ");
     scanf("%c", &guess);
